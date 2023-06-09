@@ -101,7 +101,6 @@ After performing these steps, the .aar file will be included in your Android pro
 Create a class in your project and copy the below in that class.
 
 
-'''
 @RequiresApi(Build.VERSION_CODES.O)
 object SurveyManager :ConfigSurvey.SurveyConfigListener {
     lateinit var applicationContext: Context
@@ -130,7 +129,7 @@ object SurveyManager :ConfigSurvey.SurveyConfigListener {
             }
 
             else -> {
-                
+
             }
         }
     }
@@ -143,7 +142,6 @@ object SurveyManager :ConfigSurvey.SurveyConfigListener {
         }
     }
 }
-'''
 
 
 
