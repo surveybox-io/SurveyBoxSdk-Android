@@ -99,9 +99,7 @@ After performing these steps, the .aar file will be included in your Android pro
 # Configuring Framework API Key
 
 Create a class in your project and copy the below in that class.
-
-
-
+```kotlin scrollbar
 object SurveyManager :ConfigSurvey.SurveyConfigListener {
     lateinit var applicationContext: Context
     lateinit var fragmentManager: FragmentManager
@@ -142,6 +140,7 @@ object SurveyManager :ConfigSurvey.SurveyConfigListener {
         }
     }
 }
+```
 
 
 
