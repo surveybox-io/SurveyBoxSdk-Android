@@ -45,11 +45,11 @@ Look for a folder named "libs" within the "app" module.
 
 Copy the .aar file into the "libs" folder of your Android project. If the "libs" folder doesn't exist, you can create it manually in the "app" module.
 
-Open your project's "build.gradle" file, located in the "app" module. It should be under the following path: "app/build.gradle".
+**Step 4.** Open your project's "build.gradle" file, located in the "app" module. It should be under the following path: "app/build.gradle".
 
 In the "build.gradle" file, locate the "dependencies" block.
 
-**Step 4.** Add the following line inside the "dependencies" block to include the .aar file
+ Add the following line inside the "dependencies" block to include the .aar file
 **implementation files('libs/surveybox-debug.aar')**
 
 Sync your project by clicking on the "Sync Now" button that appears in the toolbar. This action ensures that the new dependency is recognized and properly added to your project.
