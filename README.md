@@ -50,6 +50,7 @@ Copy the .aar file into the "libs" folder of your Android project. If the "libs"
 In the "build.gradle" file, locate the "dependencies" block.
 
  Add the following line inside the "dependencies" block to include the .aar file
+ 
 **implementation files('libs/surveybox-debug.aar')**
 
 Sync your project by clicking on the "Sync Now" button that appears in the toolbar. This action ensures that the new dependency is recognized and properly added to your project.
