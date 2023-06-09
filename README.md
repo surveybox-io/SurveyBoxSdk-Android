@@ -5,7 +5,7 @@ The SDK is maintained and supported by Survicate - The Customer Experience & Sur
 
 Installation The SDK can be installed in the IDE(Android Studio) using the methods described below.
 
-**Step 1.** To create a new project in Android Studio, follow these steps:
+**1.** To create a new project in Android Studio, follow these steps:
 
 Launch Android Studio on your computer.
 
@@ -35,9 +35,7 @@ Android Studio will start building your project and setting up the necessary fil
 
 Once the project is created, you'll see the project structure in the "Project" view on the left side of the IDE. The main components of your project, such as source code files, resources, and manifests, can be found here.
 
-**Step 2.** Download the .aar file in  computer from (https://github.com/surveybox-io/SurveyBoxSdk-Android)
 
-Extract the zip file.
 
 
 
