@@ -156,13 +156,15 @@ Calling the survey from activity
 
 Call Survey on Button click from Activity
 
- **SurveyManager.initialize(this,supportFragmentManager,"")
-            SurveyManager.showSurvey()**
+ **SurveyManager.initialize(this,supportFragmentManager,"")**
+ 
+ **SurveyManager.showSurvey()**
 
 Call Survey on Button click from Fragment
 
- **SurveyManager.initialize(requireContext(),childFragmentManager,"")
-            SurveyManager.showSurvey()**
+ **SurveyManager.initialize(requireContext(),childFragmentManager,"")**
+ 
+ **SurveyManager.showSurvey()**
 
 
 
