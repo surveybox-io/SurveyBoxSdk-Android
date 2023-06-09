@@ -8,6 +8,7 @@ Installation The SDK can be installed in the IDE(Android Studio) using the metho
 Step 1. Download the .aar file in  computer.
 
 Step 2. To create a new project in Android Studio, follow these steps:
+
 **if you already created the project then follow the Step 3**
 
 Launch Android Studio on your computer.
