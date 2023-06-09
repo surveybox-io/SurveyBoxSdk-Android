@@ -73,9 +73,10 @@ Build Features: The SDK utilizes View Binding, so the project's Gradle file shou
 
 By ensuring that the project meets the above requirements, you should be able to successfully install and use this SDK in your project.
 
-#Installation#
+# Installation
 
-Download the latest Surveybox SDK for Android(https://github.com/surveybox-io/SurveyBoxSdk-Android) and extract the zip. This is a ~1.3MB file and might take some time to download.
+[Download the latest Surveybox SDK for Android](https://github.com/surveybox-io/SurveyBoxSdk-Android)
+ and extract the zip. This is a ~1.3MB file and might take some time to download.
 Open your existing iOS application Xcode project.
 
 **Step 1.** In the Project view (usually located on the left side of the IDE), navigate to the "app" module.
