@@ -66,17 +66,19 @@ After performing these steps, the .aar file will be included in your Android pro
 **Dependencies:** The SDK has several dependencies listed in the dependencies block. To use the SDK, the project should include the necessary dependencies in its own Gradle file. These dependencies include:
 
 androidx.core:core-ktx:1.10.1
-androidx.appcompat:appcompat:1.6.1
-com.google.android.material:material:1.9.0
-com.android.volley:volley:1.2.1
-com.google.code.gson:gson:2.9.0
-androidx.navigation:navigation-fragment-ktx:2.5.3
-androidx.navigation:navigation-ui-ktx:2.5.3
-The project should also include testing dependencies for unit testing and UI testing:
 
-junit:junit:4.13.2 (for unit testing)
-androidx.test.ext:junit:1.1.5 (for instrumented testing)
-androidx.test.espresso:espresso-core:3.5.1 (for UI testing)
+androidx.appcompat:appcompat:1.6.1
+
+com.google.android.material:material:1.9.0
+
+com.android.volley:volley:1.2.1
+
+com.google.code.gson:gson:2.9.0
+
+androidx.navigation:navigation-fragment-ktx:2.5.3
+
+androidx.navigation:navigation-ui-ktx:2.5.3
+
 Build Features: The SDK utilizes View Binding, so the project's Gradle file should have viewBinding set to true under the buildFeatures block.
 
 **Java Version:** The SDK is set to use Java version 1.8. Make sure that the project is compatible with Java 1.8.
