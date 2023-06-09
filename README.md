@@ -5,8 +5,10 @@ The SDK is maintained and supported by Survicate - The Customer Experience & Sur
 
 Installation The SDK can be installed in the IDE(Android Studio) using the methods described below.
 
-Download the .aar file in local computer.
-To create a new project in Android Studio, follow these steps:
+Step 1. Download the .aar file in  computer.
+
+Step 2. To create a new project in Android Studio, follow these steps:
+**if you already created the project then follow the Step 3**
 
 Launch Android Studio on your computer.
 
@@ -36,7 +38,7 @@ Android Studio will start building your project and setting up the necessary fil
 
 Once the project is created, you'll see the project structure in the "Project" view on the left side of the IDE. The main components of your project, such as source code files, resources, and manifests, can be found here.
 
-In the Project view (usually located on the left side of the IDE), navigate to the "app" module.
+Step 3. In the Project view (usually located on the left side of the IDE), navigate to the "app" module.
 Expand the "app" module by clicking on the arrow next to it.
 Look for a folder named "libs" within the "app" module. 
 
@@ -46,8 +48,8 @@ Open your project's "build.gradle" file, located in the "app" module. It should 
 
 In the "build.gradle" file, locate the "dependencies" block.
 
-Add the following line inside the "dependencies" block to include the .aar file
-implementation files('libs/surveybox-debug.aar')
+Step 4. Add the following line inside the "dependencies" block to include the .aar file
+**implementation files('libs/surveybox-debug.aar')**
 
 Sync your project by clicking on the "Sync Now" button that appears in the toolbar. This action ensures that the new dependency is recognized and properly added to your project.
 
