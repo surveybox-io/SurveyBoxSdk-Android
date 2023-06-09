@@ -43,9 +43,7 @@ Extract the zip file.
 
 # Requirements
 
-The SDK supports iOS 13+. Survicate Mobile SDK is distributed in a binary version and developed using Swift 5.3. The minimum required version of Xcode is 13.0, however we recommend using the SDK with Xcode 13.1 and above.
-
-Using Survaybox Mobile SDK requires an account at Survaybox. Sign up for free and find your workspace key in the Access Keys tab.
+Using Surveybox Mobile SDK requires an account at [Survaybox](https://surveybox.io/). Sign up for free and find your workspace key in the Access Keys tab.
 
 **Minimum SDK:** The minimum SDK required by the SDK is set to 24 (Android 7.0 Nougat) or higher.
 
@@ -96,6 +94,56 @@ In the "build.gradle" file, locate the "dependencies" block.
 Sync your project by clicking on the "Sync Now" button that appears in the toolbar. This action ensures that the new dependency is recognized and properly added to your project.
 
 After performing these steps, the .aar file will be included in your Android project, and you can use its classes, resources, and other assets in your code. Remember to rebuild your project to make sure the changes take effect.
+
+
+# Configuring Framework API Key
+
+Create a class in your project and copy the below in that class.
+
+
+'''
+@RequiresApi(Build.VERSION_CODES.O)
+object SurveyManager :ConfigSurvey.SurveyConfigListener {
+    lateinit var applicationContext: Context
+    lateinit var fragmentManager: FragmentManager
+    lateinit var className: String
+    private var isConfigured:Boolean = false
+
+    fun initialize(context: Context, fragmentManager: FragmentManager, className: String?) {
+        applicationContext = context.applicationContext
+        SurveyManager.fragmentManager = fragmentManager
+        SurveyManager.className = className ?: ""
+
+        val configSurvey = ConfigSurvey(applicationContext)
+        configSurvey.setSurveyConfigListener(this)
+        configSurvey.configSurvey("888ebd60-5149-444f-b734-8ce5e8de540a", "vijay@technodroidz.in")
+        isConfigured = true
+    }
+
+    override fun onSurveyConfigured(triggerClass: String) {
+        // Match triggerClass with the current activity and show the survey if there is a match
+        Toast.makeText(applicationContext, className.toString(), Toast.LENGTH_SHORT).show()
+        when (triggerClass) {
+            className -> {
+
+                showSurvey()
+            }
+
+            else -> {
+                
+            }
+        }
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    fun showSurvey() {
+        if (isConfigured) {
+            val welcomeSurvey = WelcomeSurvey()
+            welcomeSurvey.show(fragmentManager, "WelcomeSurvey")
+        }
+    }
+}
+'''
 
 
 
