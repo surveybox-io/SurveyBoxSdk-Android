@@ -71,7 +71,7 @@ By ensuring that the project meets the above requirements, you should be able to
 
 # Installation
 
-![Image Description](https://drive.google.com/file/d/1IFacd0Q6DCKopGx4tdgEprexadLZSFMY/view?usp=drive_link)
+![Image Description](https://drive.google.com/file/d/1IFacd0Q6DCKopGx4tdgEprexadLZSFMY/view?usp=sharing)
 
 **Step 1.** [Download the latest Surveybox SDK for Android](https://github.com/surveybox-io/SurveyBoxSdk-Android)
  and extract the zip. This is a ~194kb file and might take some time to download.
