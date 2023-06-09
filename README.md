@@ -5,11 +5,7 @@ The SDK is maintained and supported by Survicate - The Customer Experience & Sur
 
 Installation The SDK can be installed in the IDE(Android Studio) using the methods described below.
 
-**Step 1.** Download the .aar file in  computer from (https://github.com/surveybox-io/SurveyBoxSdk-Android).
-
-**Step 2.** To create a new project in Android Studio, follow these steps:
-
-**if you already created the project then follow the Step 3**
+**Step 1.** To create a new project in Android Studio, follow these steps:
 
 Launch Android Studio on your computer.
 
@@ -39,29 +35,21 @@ Android Studio will start building your project and setting up the necessary fil
 
 Once the project is created, you'll see the project structure in the "Project" view on the left side of the IDE. The main components of your project, such as source code files, resources, and manifests, can be found here.
 
-**Step 3.** In the Project view (usually located on the left side of the IDE), navigate to the "app" module.
-Expand the "app" module by clicking on the arrow next to it.
-Look for a folder named "libs" within the "app" module. 
+**Step 2.** Download the .aar file in  computer from (https://github.com/surveybox-io/SurveyBoxSdk-Android)
 
-Copy the .aar file into the "libs" folder of your Android project. If the "libs" folder doesn't exist, you can create it manually in the "app" module.
+Extract the zip file.
 
-**Step 4.** Open your project's "build.gradle" file, located in the "app" module. It should be under the following path: "app/build.gradle".
 
-In the "build.gradle" file, locate the "dependencies" block.
-
- Add the following line inside the "dependencies" block to include the .aar file
- 
-**implementation files('libs/surveybox-debug.aar')**
-
-Sync your project by clicking on the "Sync Now" button that appears in the toolbar. This action ensures that the new dependency is recognized and properly added to your project.
-
-After performing these steps, the .aar file will be included in your Android project, and you can use its classes, resources, and other assets in your code. Remember to rebuild your project to make sure the changes take effect.
 
 # Requirements
 
-**Minimum SDK:** The minimum SDK required by the SDK is set to 24 (Android 7.0 Nougat). Therefore, the project where you want to install this SDK should have a minimum SDK version of 24 or higher.
+The SDK supports iOS 13+. Survicate Mobile SDK is distributed in a binary version and developed using Swift 5.3. The minimum required version of Xcode is 13.0, however we recommend using the SDK with Xcode 13.1 and above.
 
-**Compile SDK:** The SDK is compiled against SDK version 33. Hence, the project where you want to use this SDK should have the corresponding SDK version installed.
+Using Survaybox Mobile SDK requires an account at Survaybox. Sign up for free and find your workspace key in the Access Keys tab.
+
+**Minimum SDK:** The minimum SDK required by the SDK is set to 24 (Android 7.0 Nougat) or higher.
+
+**Compile SDK:** The SDK is compiled against SDK version 33. 
 
 **Dependencies:** The SDK has several dependencies listed in the dependencies block. To use the SDK, the project should include the necessary dependencies in its own Gradle file. These dependencies include:
 
@@ -84,3 +72,32 @@ Build Features: The SDK utilizes View Binding, so the project's Gradle file shou
 **Java Version:** The SDK is set to use Java version 1.8. Make sure that the project is compatible with Java 1.8.
 
 By ensuring that the project meets the above requirements, you should be able to successfully install and use this SDK in your project.
+
+#Installation#
+
+Download the latest Surveybox SDK for Android(https://github.com/surveybox-io/SurveyBoxSdk-Android) and extract the zip. This is a ~1.3MB file and might take some time to download.
+Open your existing iOS application Xcode project.
+
+**Step 1.** In the Project view (usually located on the left side of the IDE), navigate to the "app" module.
+Expand the "app" module by clicking on the arrow next to it.
+Look for a folder named "libs" within the "app" module. 
+
+Copy the .aar file into the "libs" folder of your Android project. If the "libs" folder doesn't exist, you can create it manually in the "app" module.
+
+**Step 2.** Open your project's "build.gradle" file, located in the "app" module. It should be under the following path: "app/build.gradle".
+
+In the "build.gradle" file, locate the "dependencies" block.
+
+ Add the following line inside the "dependencies" block to include the .aar file
+ 
+**implementation files('libs/surveybox-debug.aar')**
+
+Sync your project by clicking on the "Sync Now" button that appears in the toolbar. This action ensures that the new dependency is recognized and properly added to your project.
+
+After performing these steps, the .aar file will be included in your Android project, and you can use its classes, resources, and other assets in your code. Remember to rebuild your project to make sure the changes take effect.
+
+
+
+
+
+
