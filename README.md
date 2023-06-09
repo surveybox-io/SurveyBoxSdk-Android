@@ -98,7 +98,7 @@ After performing these steps, the .aar file will be included in your Android pro
 
 # Configuring Framework API Key
 
-Create a class in your project and copy the below in that class.
+**Step 1.** Create a class in your project and copy the below in that class.
 ```kotlin scrollbar
 object SurveyManager :ConfigSurvey.SurveyConfigListener {
     lateinit var applicationContext: Context
@@ -142,8 +142,27 @@ object SurveyManager :ConfigSurvey.SurveyConfigListener {
     }
 }
 ```
+**Step 2.** Include the below lines in Project
+Trigger survey  automatically by matching the class name
 
+Calling the survey from activity  
+  Replace MainActivity with your Activity 
+  **SurveyManager.initialize(this,supportFragmentManager,MainActivity::class.java.simpleName)**
+  
+ if you are calling the survey from fragment 
+ Replace fragmentClassName with your Fragment class name
 
+**SurveyManager.initialize(requireContext(), childFragmentManager, fragmentClassName::class.java.simpleName)**
+
+Call Survey on Button click from Activity
+
+ **SurveyManager.initialize(this,supportFragmentManager,"")
+            SurveyManager.showSurvey()**
+
+Call Survey on Button click from Fragment
+
+ **SurveyManager.initialize(requireContext(),childFragmentManager,"")
+            SurveyManager.showSurvey()**
 
 
 
