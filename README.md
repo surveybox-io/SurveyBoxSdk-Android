@@ -5,7 +5,7 @@ The SDK is maintained and supported by Survicate - The Customer Experience & Sur
 
 Installation The SDK can be installed in the IDE(Android Studio) using the methods described below.
 
-**Step 1.** Download the .aar file in  computer.
+**Step 1.** Download the .aar file in  computer from (https://github.com/surveybox-io/SurveyBoxSdk-Android).
 
 **Step 2.** To create a new project in Android Studio, follow these steps:
 
