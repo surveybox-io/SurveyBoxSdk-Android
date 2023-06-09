@@ -114,7 +114,7 @@ object SurveyManager :ConfigSurvey.SurveyConfigListener {
         val configSurvey = ConfigSurvey(applicationContext)
         configSurvey.setSurveyConfigListener(this)
 
-       <b>configSurvey.configSurvey("Enter your API Key here", "Organization Email id")</b>
+       configSurvey.configSurvey("Enter your API Key here", "Organization Email id")
         isConfigured = true
     }
 
