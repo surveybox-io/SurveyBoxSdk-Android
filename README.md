@@ -75,17 +75,17 @@ By ensuring that the project meets the above requirements, you should be able to
 
 # Installation
 
-[Download the latest Surveybox SDK for Android](https://github.com/surveybox-io/SurveyBoxSdk-Android)
- and extract the zip. This is a ~1.3MB file and might take some time to download.
-Open your existing iOS application Xcode project.
+**Step 1.** [Download the latest Surveybox SDK for Android](https://github.com/surveybox-io/SurveyBoxSdk-Android)
+ and extract the zip. This is a ~194kb file and might take some time to download.
+Open your existing Android Studio Project.
 
-**Step 1.** In the Project view (usually located on the left side of the IDE), navigate to the "app" module.
+**Step 2.** In the Project view (usually located on the left side of the IDE), navigate to the "app" module.
 Expand the "app" module by clicking on the arrow next to it.
 Look for a folder named "libs" within the "app" module. 
 
 Copy the .aar file into the "libs" folder of your Android project. If the "libs" folder doesn't exist, you can create it manually in the "app" module.
 
-**Step 2.** Open your project's "build.gradle" file, located in the "app" module. It should be under the following path: "app/build.gradle".
+**Step 3.** Open your project's "build.gradle" file, located in the "app" module. It should be under the following path: "app/build.gradle".
 
 In the "build.gradle" file, locate the "dependencies" block.
 
