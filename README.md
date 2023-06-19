@@ -154,7 +154,6 @@ Calling the survey from activity
  
  (application as MyApplication).checkAndShowSurvey(this,"Your Activity Class name or this.javaClass.simpleName")
 
-
 ```
 
 Call Survey on Button click from Activity
