@@ -156,12 +156,11 @@ Call Survey on Button click from Activity
   ```(application as MyApplication).showSurvey(this)
   ```
  
- **Trigger survey  automatically by matching the class name of the fragment **
+ **Trigger survey  automatically by matching the class name of the fragment**
   if you are calling the survey from fragment 
   Replace fragmentClassName with your Fragment class name
 
-```(requireActivity().application as MyApplication).checkAndShowSurvey(requireActivity(), "Your Fragment class name")
-```
+```(requireActivity().application as MyApplication).checkAndShowSurvey(requireActivity(), "Your Fragment class name")```
 
 Call Survey on Button click from Fragment
 
