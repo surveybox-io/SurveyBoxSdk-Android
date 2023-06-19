@@ -67,6 +67,7 @@ Build Features: The SDK utilizes View Binding, so the project's Gradle file shou
 
   ```
   buildFeatures{
+  
         viewBinding true
     }
     
@@ -98,6 +99,7 @@ In the "build.gradle" file, locate the "dependencies" block.
  Add the following line inside the "dependencies" block to include the .aar file
  
 ```
+
 implementation files('libs/surveybox-debug.aar')
 
 ```
