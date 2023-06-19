@@ -59,7 +59,8 @@ implementation 'com.google.code.gson:gson:2.9.0'
 
 implementation 'androidx.navigation:navigation-fragment-ktx:2.6.0'
 
-implementation 'androidx.navigation:navigation-ui-ktx:2.6.0'```
+implementation 'androidx.navigation:navigation-ui-ktx:2.6.0'
+```
 
 Build Features: The SDK utilizes View Binding, so the project's Gradle file should have viewBinding set to true under the buildFeatures block.
 ![view binding](https://github.com/surveybox-io/SurveyBoxSdk-Android/assets/79449782/bcaade5e-bfeb-42c1-8f8d-76a80d496ac4)
