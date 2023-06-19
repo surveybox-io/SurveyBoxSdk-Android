@@ -155,7 +155,7 @@ class MyApplication : Application() {
 Trigger survey  automatically by matching the class name
   
 Calling the survey from activity  
-  Replace MainActivity with your Activity 
+  Replace MainActivity with your Activity Class Name
  ```
  
  (application as MyApplication).checkAndShowSurvey(this,"MainActivity")
