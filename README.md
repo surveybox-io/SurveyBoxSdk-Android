@@ -65,10 +65,12 @@ Using Surveybox Mobile SDK requires an account at [Survaybox](https://surveybox.
 Build Features: The SDK utilizes View Binding, so the project's Gradle file should have viewBinding set to true under the buildFeatures block.
 ![view binding](https://github.com/surveybox-io/SurveyBoxSdk-Android/assets/79449782/bcaade5e-bfeb-42c1-8f8d-76a80d496ac4)
 
-  ```**buildFeatures{
-        viewBinding true
-    }**
   ```
+  buildFeatures{
+        viewBinding true
+    }
+    
+```
 
 
 **Java Version:** The SDK is set to use Java version 8. Make sure that the project is compatible with Java 8 or above.
@@ -145,14 +147,14 @@ class MyApplication : Application() {
 }
 ```
 
-**Step 2.** Include the below lines in Project
+**Step 2.** Include the below line in your Project activity
 Trigger survey  automatically by matching the class name
   
 Calling the survey from activity  
   Replace MainActivity with your Activity 
  ```
  
- (application as MyApplication).checkAndShowSurvey(this,"Your Activity Class name or this.javaClass.simpleName")
+ (application as MyApplication).checkAndShowSurvey(this,"MainActivity")
 
 ```
 
@@ -170,7 +172,7 @@ Call Survey on Button click from Activity
 
 ```
 
-(requireActivity().application as MyApplication).checkAndShowSurvey(requireActivity(), "Your Fragment class name")
+(requireActivity().application as MyApplication).checkAndShowSurvey(requireActivity(), "Fragment class name")
 
 ```
 
