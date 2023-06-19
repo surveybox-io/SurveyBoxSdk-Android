@@ -151,8 +151,10 @@ Trigger survey  automatically by matching the class name
 Calling the survey from activity  
   Replace MainActivity with your Activity 
  ```
- (application as MyApplication).checkAndShowSurvey(this,"Your Activity Class name or this.javaClass.simpleName")
  
+ (application as MyApplication).checkAndShowSurvey(this,"Your Activity Class name or this.javaClass.simpleName")
+
+
 ```
 
 Call Survey on Button click from Activity
