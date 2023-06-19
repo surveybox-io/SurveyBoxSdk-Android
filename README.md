@@ -49,7 +49,7 @@ Using Surveybox Mobile SDK requires an account at [Survaybox](https://surveybox.
 
 **Dependencies:** The SDK has several dependencies listed in the dependencies block. To use the SDK, the project should include the necessary dependencies in its own Gradle file. These dependencies include:
 
-``` implementation 'androidx.core:core-ktx:1.10.1'
+```implementation 'androidx.core:core-ktx:1.10.1'
 
  implementation 'androidx.appcompat:appcompat:1.6.1'
 
@@ -64,9 +64,9 @@ implementation 'androidx.navigation:navigation-ui-ktx:2.6.0'```
 Build Features: The SDK utilizes View Binding, so the project's Gradle file should have viewBinding set to true under the buildFeatures block.
 ![view binding](https://github.com/surveybox-io/SurveyBoxSdk-Android/assets/79449782/bcaade5e-bfeb-42c1-8f8d-76a80d496ac4)
 
-```  buildFeatures{
+  **buildFeatures{
         viewBinding true
-    }```
+    }**
 
 
 **Java Version:** The SDK is set to use Java version 8. Make sure that the project is compatible with Java 8 or above.
@@ -93,7 +93,7 @@ In the "build.gradle" file, locate the "dependencies" block.
 
  Add the following line inside the "dependencies" block to include the .aar file
  
-```implementation files('libs/surveybox-debug.aar')```
+**implementation files('libs/surveybox-debug.aar')**
 
 Sync your project by clicking on the "Sync Now" button that appears in the toolbar. This action ensures that the new dependency is recognized and properly added to your project.
 
