@@ -150,12 +150,17 @@ Trigger survey  automatically by matching the class name
   
 Calling the survey from activity  
   Replace MainActivity with your Activity 
- ```(application as MyApplication).checkAndShowSurvey(this,"Your Activity Class name or this.javaClass.simpleName")
+ ```
+ (application as MyApplication).checkAndShowSurvey(this,"Your Activity Class name or this.javaClass.simpleName")
+ 
 ```
 
 Call Survey on Button click from Activity
 
-  ```(application as MyApplication).showSurvey(this)
+  ``` 
+  
+  (application as MyApplication).showSurvey(this) 
+  
   ```
  
  **Trigger survey  automatically by matching the class name of the fragment**
@@ -163,6 +168,7 @@ Call Survey on Button click from Activity
   Replace fragmentClassName with your Fragment class name
 
 ```
+
 (requireActivity().application as MyApplication).checkAndShowSurvey(requireActivity(), "Your Fragment class name")
 
 ```
@@ -170,6 +176,7 @@ Call Survey on Button click from Activity
 Call Survey on Button click from Fragment
 
  ```
+ 
 (requireActivity().application as MyApplication).showSurvey(requireActivity() as AppCompatActivity)
 
  ```
